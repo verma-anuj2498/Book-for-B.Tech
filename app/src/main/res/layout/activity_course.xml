@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.av.mirror.recycler.MainActivity"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical"
+    >
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/computerscience"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardElevation="5dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+
+                >
+                <ImageView
+
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cse"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                card_view:cardCornerRadius="4dp"
+                android:layout_below="@id/computerscience"
+                android:id="@+id/infotech"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_margin="10dp"
+
+                >
+
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/it" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="IT"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textColor="#000"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                card_view:cardCornerRadius="4dp"
+                android:layout_below="@id/infotech"
+                android:id="@+id/mech"
+                android:padding="8dp"
+                card_view:cardElevation="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mech"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanical"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textColor="#000"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/ece"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5dp"
+                android:layout_below="@id/mech"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ece"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="ECE"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textColor="#000"/>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_gravity="center"
+                android:id="@+id/civil"
+                card_view:cardElevation="5dp"
+                android:layout_below="@id/mech"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                >
+                <ImageView
+                    android:id="@+id/courseimage5"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/civil"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Civil"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textColor="#000"/>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

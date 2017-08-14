@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"/>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sem_nav_one"
+            android:title="1st year" />
+        <item
+            android:id="@+id/sem_nav_two"
+            android:title="2nd year" />
+        <item
+            android:id="@+id/sem_nav_three"
+            android:title="3rd year" />
+        <item
+            android:id="@+id/sem_nav_four"
+            android:title="4th year" />
+    </group>
+
+
+
+</menu>
